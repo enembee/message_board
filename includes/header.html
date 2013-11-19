@@ -65,7 +65,8 @@ mysqli_free_result($r);
 			<td valign="top" nowrap="nowrap" width="10%">
 				<b>
 					<?php
-						echo '<a href="index.php" class="navlink"' . $words["home"] . '</a><br /><a href="forum.php" class="navlink"' . $words["forum_home"] . "</a><br />";
+						echo '<a href="index.php" class="navlink"' . $words["home"] . '</a><br />
+						<a href="forum.php" class="navlink"' . $words["forum_home"] . "</a><br />";
 
 						if (isset($_SESSION["user_id"])) {
 							if (basename($_SERVER["PHP_SELF"]) == "forum.php") {
@@ -88,9 +89,5 @@ mysqli_free_result($r);
 
 						mysqli_free_result($r);
 
-						echo '</select><br /><input name="submit" type="submit" value="' . $words["submit"] . '"/></form></p></td><td valign="top" class="content"';
+						echo '</select><br /><input name="submit" type="submit" value="' . $words["submit"] . '"/></form></p></td><td valign="top" class="content">';
 					?>
-			</td>
-		</tr>
-	</table>
-</body>
